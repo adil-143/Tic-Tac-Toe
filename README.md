@@ -32,9 +32,9 @@ The game allows two players to play the classic Tic Tac Toe game on the web in a
 ---
 
 ## 📂 Project Structure  
-Tic-Tac-Toe/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
+Tic-Tac-Toe/<br>
+│<br>
+├── index.html<br>
+├── style.css<br>
+├── script.js<br>
+└── README.md<br>
