@@ -17,6 +17,12 @@ let winningCombinations = [
     [2, 4, 6]
 ];
 
+const resetGame = () => {
+    currentPlayer = true;
+    enableAllBoxes();
+    messageDiv.classList.add('hide');
+}
+
 boxes.forEach((box) => {
     box.addEventListener('click', () => {
         console.log("Box clicked");
@@ -50,3 +56,13 @@ const checkWin = () => {
             return;
         }
 }}
+
+const enableAllBoxes = () => {
+    for (let box of boxes){
+        box.disabled = false;
+        box.textContent = "";
+    }
+}
+
+newGame.addEventListener('click', resetGame);
+reset.addEventListener('click', resetGame);
